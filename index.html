@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <link href="https://fonts.google.com/specimen/IM+Fell+Double+Pica+SC?category=Serif&selection.family=IM+Fell+Double+Pica+SC|Stoke" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="title"> 
+    Clarusway Survey Form
+    </h1>
+
+    <h3 id="description">
+      Thank you for taking the time to help us improve the platform
+    </h3>
+
+    <form id="form" action="result.html" method="GET" target="_blank">
+
+      <div class="box">
+        <label for="name" id="name-label">Name</label><br><br>
+        <input type="text" name='name' placeholder="Enter your name" id="name" required><br>
+      </div>
+
+      <div class="box">
+        <label for="surname" id="surname-label">Surname</label><br><br>
+        <input type="text" name='surname' placeholder="Enter your Surname" id="surname" required><br>
+      </div>
+
+      <div class="box">
+        <label for="email" id="email-label">Email</label><br><br>
+        <input type="email" name="email" placeholder="user@clarusway.com" id="email" required><br>
+      </div>
+
+      <div class="box">
+        <label for='dropdown' id="dropdown-label">Which option best descripes your current role?</label><br><br>
+        <select name='content' id="dropdown">
+          <option value="Select current role" selected>Select current role</option>
+          <option value="Student">Student</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Part Time Job">Part Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+        </select><br><br>
+      </div>
+
+      <div class="box">
+        <label id="radiobtn">Would you recommend Clarusway to a friend?</label><br><br>
+        <label for="first-radio"><input type="radio" id="first-radio" name="Definitely,Yes"> Definitely,Yes</label><br><br>
+        <label for="second-radio"><input type="radio" id="second-radio" name="Maybe"> Maybe</label><br><br>
+        <label for="third-radio"><input type="radio" id="third-radio" name="Not sure"> Not sure</label><br><br>
+        <label for="first-radio"><input type="radio" id="fourth-radio" name="Definitely,No"> Definitely,No</label><br><br>
+      </div>
+
+      <div class="box">
+        <label for='dropdown' id="dropdown-label">What is your favorite feature of Clarusway?</label><br><br>
+        <select name='content' id="dropdown">
+          <option value="Select an option" selected>Select an option</option>
+          <option value="Courses">Courses</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Mentors">Mentors</option>
+        </select><br><br>
+
+        <div class="box">
+        <label id="checkbox"> What would you like to see improved? (Check all that apply)</label><br><br>
+        <label for="first-check"><input type="checkbox" id="first-check" name="Front end" value="Front end">
+          Front-end Projects</label><br><br>
+        <label for="second-check"><input type="checkbox" id="second-check" name="Back end" value="Back end">
+          Back-end Projects</label><br><br>
+        <label for="third-check"><input type="checkbox" id="third-check" name="Data Science" value="Data Science" checked>
+          Data Science</label><br><br>
+        <label for="fourth-check"><input type="checkbox" id="fourth-check" name="Additionial Courses" value="Additionial Courses" checked>
+          Additionial Courses</label><br><br>
+      </div>
+    
+      <div class="box box-textarea">
+        <label id="comment-label">Any comments or suggestions?</label><br><br>
+        <textarea class="text-area" name="message" rows="2" cols="20" placeholder="Enter your comment here...Thanxs for your comments...."></textarea><input type="submit" id="submit"><br /> 
+    </div>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
